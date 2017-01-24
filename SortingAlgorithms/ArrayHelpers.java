@@ -34,12 +34,23 @@ class ArrayHelpers {
   }
 
    public void printArray(int[] array) {
-    System.out.println("Key | Value");
+
+    // System.out.println("-------------");
+
+    System.out.println("-------------------------------------------------------------------");
+    System.out.print("| Key  | ");
     for(int i=0; i < arrsize; i++) {
-      System.out.println("------------");
-      System.out.println("| " + i + "  |  " + array[i] + " |");
+      System.out.print(i + "  |  ");
     }
-    System.out.println("------------");
+    System.out.println("");
+    System.out.println("-------------------------------------------------------------------");
+
+    System.out.print("| Value| ");
+    for(int i=0; i < arrsize; i++) {
+      System.out.print(array[i] + " |  ");
+    }
+    System.out.println("");
+    System.out.println("-------------------------------------------------------------------");
   }
 
   public static void main(String[] args) {
